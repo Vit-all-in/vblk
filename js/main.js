@@ -214,7 +214,7 @@ descriptions.forEach((description) => {
       readMoreLink.href = '#';
       readMoreLink.classList.add('popular__read-more');
       readMoreLink.textContent = 'Подробнее';
-      
+
       readMoreLink.addEventListener('click', function (e) {
          e.preventDefault();
          const card = this.closest('.popular__card');
@@ -241,9 +241,39 @@ openModalButton.addEventListener('click', function () {
    modal.style.display = 'block';
 });
 
-// Закрытие модального окна при клике вне его области
 window.addEventListener('click', function (e) {
    if (e.target === modal) {
       modal.style.display = 'none';
    }
+});
+const regionSelects = document.querySelectorAll('.region-select');
+const phoneLinks = document.querySelectorAll('.nav__phone');
+
+function updatePhoneLink(regionSelect, phoneLink) {
+  const selectedRegion = regionSelect.value;
+  if (selectedRegion === 'region1') {
+    phoneLink.href = 'tel:+79213218100';
+    phoneLink.textContent = '+7(921)321-81-00';
+  } else if (selectedRegion === 'region2' || selectedRegion === 'region3') {
+    phoneLink.href = 'tel:+79663528900';
+    phoneLink.textContent = '+7(966)352-89-00';
+  }
+}
+
+regionSelects.forEach(function(regionSelect) {
+  regionSelect.addEventListener('change', function() {
+    const phoneLink = this.closest('.container').querySelector('.nav__phone');
+    updatePhoneLink(this, phoneLink);
+    localStorage.setItem('selectedRegion', this.value);
+  });
+});
+
+regionSelects.forEach(function(regionSelect, index) {
+  const phoneLink = phoneLinks[index];
+  updatePhoneLink(regionSelect, phoneLink);
+  const savedRegion = localStorage.getItem('selectedRegion');
+  if (savedRegion) {
+    regionSelect.value = savedRegion;
+    updatePhoneLink(regionSelect, phoneLink);
+  }
 });

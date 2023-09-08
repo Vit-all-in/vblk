@@ -13,13 +13,29 @@
 <body>
            <!--==================== HEADER ====================-->
         <header class="header" id="header">
+
+         <div class="container header__reg">
+            <p class="submit-reg">Ваш регион</p>
+            <select class="region-select"> 
+               <option value="region1">Крым</option> 
+               <option value="region2">Москва</option> 
+               <option value="region3">Московская обл.</option>
+            </select> 
+            <a href="tel:+79663528900" class="nav__phone">+7(966)352-89-00</a> 
+         </div>    
             <nav class="nav container">
                <a href="#home" class="nav__logo">
                   ВБЛК <i class='bx bxs-home-alt-2'></i>
                </a>
-
-               <a href="tel:+79663528900" class="nav__phone">+7(966)352-89-00</a>
-
+               <div class="container header__reg header__reg--mobile">
+                  <p class="submit-reg">Ваш регион</p>
+                  <select class="region-select"> 
+                     <option value="region1">Крым</option> 
+                     <option value="region2">Москва</option> 
+                     <option value="region3">Московская обл.</option>
+                  </select> 
+                  <a href="tel:+79663528900" class="nav__phone">+7(966)352-89-00</a> 
+               </div>    
                <div class="nav__menu">
                   <ul class="nav__list">
                      <li class="nav__item">
@@ -53,11 +69,14 @@
                </div>
 
                <i class='bx bx-moon change-theme' id="theme-button"></i>
-
+               
                <a href="#" class="logo">
                   <img src="assets/img/logo.jpg" alt="logo">
                </a>
             </nav>
+           
+
+            
         </header>
 
         <!--==================== MAIN ====================-->
