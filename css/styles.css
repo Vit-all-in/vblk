@@ -327,6 +327,7 @@ body.dark-theme {
 .home__description {
   color: var(--text-color-light);
   margin-bottom: 2rem;
+  font-size: var(--h1-font-size);
 }
 
 .home__value {
