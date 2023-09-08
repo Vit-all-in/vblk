@@ -252,8 +252,8 @@ const phoneLinks = document.querySelectorAll('.nav__phone');
 function updatePhoneLink(regionSelect, phoneLink) {
   const selectedRegion = regionSelect.value;
   if (selectedRegion === 'region1') {
-    phoneLink.href = 'tel:+79213218100';
-    phoneLink.textContent = '+7(921)321-81-00';
+    phoneLink.href = 'tel:+79162990281';
+    phoneLink.textContent = '+7(916)299-02-81';
   } else if (selectedRegion === 'region2' || selectedRegion === 'region3') {
     phoneLink.href = 'tel:+79663528900';
     phoneLink.textContent = '+7(966)352-89-00';
