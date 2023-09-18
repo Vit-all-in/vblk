@@ -211,3 +211,30 @@ descriptions.forEach((description) => {
       description.parentNode.appendChild(readMoreLink);
    }
 });
+
+const cards = document.querySelectorAll('.project__card');
+
+cards.forEach(card => {
+   card.addEventListener('click', () => {
+      const modalId = card.getAttribute('data-modal-id');
+      const modal = document.getElementById(modalId);
+
+      if (modal) {
+         modal.style.display = 'flex';
+
+         const closeModal = () => {
+            modal.style.display = 'none';
+         };
+
+         const modalContent = modal.querySelector('.modal__content');
+         const modalClose = modal.querySelector('.modal__close');
+
+         modalClose.addEventListener('click', closeModal);
+         modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+               closeModal();
+            }
+         });
+      }
+   });
+});
