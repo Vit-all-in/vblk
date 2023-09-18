@@ -102,7 +102,7 @@ const sr = ScrollReveal({
    delay: 400
 })
 
-sr.reveal('.home__title, .popular__container, .footer__container, .gallery__card')
+sr.reveal('.home__title, .popular__container, .footer__container, .gallery__item, .button')
 sr.reveal('.home__description', {
    delay: 500
 })
@@ -120,28 +120,6 @@ sr.reveal('.value__content, .contact__images', {
    origin: 'right'
 });
 
-/* const TOKEN = '6533608404:AAHQSTQ2EoqMDtCFInYyI6GgWSqOgPkoMgE';
-const CHAT_ID = '-1001944417502';
-const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-
-document.getElementById('form1').addEventListener('submit', function (e) {
-   e.preventDefault();
-   let message = `<b>Заявка с сайта</b>\n`;
-   message += `<b>Отправитель</b> ${this.name.value}\n`;
-   message += `<b>Почта</b> ${this.email.value}\n`;
-   message += `<b>Сообщение</b> ${this.comment.value}\n`;
-
-   axios.post(URL_API, {
-      chat_id: CHAT_ID,
-      parse_mode: 'html',
-      text: message
-   })
-}) */
-
-/* document.getElementById('close-notification').addEventListener('click', function () {
-   document.getElementById('cookie-notification').classList.add('hidden');
-});
- */
 // Функция для установки значения куки
 function setCookie(cookieName, cookieValue, expirationDays) {
    const date = new Date();
@@ -210,7 +188,7 @@ const descriptions = document.querySelectorAll('.popular__description');
 descriptions.forEach((description) => {
    const text = description.textContent.trim();
    if (text.length > 140) {
-      const readMoreLink = document.createElement('a');
+      const readMoreLink = document.createElement('p');
       readMoreLink.href = '#';
       readMoreLink.classList.add('popular__read-more');
       readMoreLink.textContent = 'Подробнее';
@@ -232,48 +210,4 @@ descriptions.forEach((description) => {
 
       description.parentNode.appendChild(readMoreLink);
    }
-});
-
-const openModalButton = document.getElementById('openModal');
-const modal = document.getElementById('modal');
-
-openModalButton.addEventListener('click', function () {
-   modal.style.display = 'block';
-});
-
-window.addEventListener('click', function (e) {
-   if (e.target === modal) {
-      modal.style.display = 'none';
-   }
-});
-const regionSelects = document.querySelectorAll('.region-select');
-const phoneLinks = document.querySelectorAll('.nav__phone');
-
-function updatePhoneLink(regionSelect, phoneLink) {
-  const selectedRegion = regionSelect.value;
-  if (selectedRegion === 'region1') {
-    phoneLink.href = 'tel:+79663528900';
-    phoneLink.textContent = '+7(966)352-89-00';
-  } else if (selectedRegion === 'region2' || selectedRegion === 'region3') {
-    phoneLink.href = 'tel:+79162990281';
-    phoneLink.textContent = '+7(916)299-02-81';
-  }
-}
-
-regionSelects.forEach(function(regionSelect) {
-  regionSelect.addEventListener('change', function() {
-    const phoneLink = this.closest('.container').querySelector('.nav__phone');
-    updatePhoneLink(this, phoneLink);
-    localStorage.setItem('selectedRegion', this.value);
-  });
-});
-
-regionSelects.forEach(function(regionSelect, index) {
-  const phoneLink = phoneLinks[index];
-  updatePhoneLink(regionSelect, phoneLink);
-  const savedRegion = localStorage.getItem('selectedRegion');
-  if (savedRegion) {
-    regionSelect.value = savedRegion;
-    updatePhoneLink(regionSelect, phoneLink);
-  }
 });

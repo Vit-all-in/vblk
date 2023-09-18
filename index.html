@@ -12,30 +12,21 @@
 </head>
 <body>
            <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-
-         <div class="container header__reg">
-            <p class="submit-reg">Ваш регион</p>
-            <select class="region-select"> 
-               <option value="region1">Крым</option> 
-               <option value="region2">Москва</option> 
-               <option value="region3">Московская обл.</option>
-            </select> 
-            <a href="tel:+79663528900" class="nav__phone">+7(966)352-89-00</a> 
-         </div>    
+        <header class="header" id="header">   
             <nav class="nav container">
-               <a href="#home" class="nav__logo">
-                  ВБЛК <i class='bx bxs-home-alt-2'></i>
-               </a>
-               <div class="container header__reg header__reg--mobile">
-                  <p class="submit-reg">Ваш регион</p>
-                  <select class="region-select"> 
-                     <option value="region1">Крым</option> 
-                     <option value="region2">Москва</option> 
-                     <option value="region3">Московская обл.</option>
-                  </select> 
+               <div class="nav__info">
+                  <a href="#" class="logo">
+                     <img src="assets/img/logo.jpg" alt="logo">
+                  </a>
+   
+                  <a href="#home" class="nav__logo">
+                     ВБЛК 
+                  </a>
+                  
                   <a href="tel:+79663528900" class="nav__phone">+7(966)352-89-00</a> 
-               </div>    
+               </div>
+
+
                <div class="nav__menu">
                   <ul class="nav__list">
                      <li class="nav__item">
@@ -69,10 +60,7 @@
                </div>
 
                <i class='bx bx-moon change-theme' id="theme-button"></i>
-               
-               <a href="#" class="logo">
-                  <img src="assets/img/logo.jpg" alt="logo">
-               </a>
+            
             </nav>
            
 
@@ -87,11 +75,11 @@
                 <div class="home__container container grid">
                   <div class="home__data">
                      <h1 class="home__title">
-                        Строительная компания "ВБЛК" <br> Ваш Надежный Партнер <br> в Мире Строительства
+                        АО "ВБЛК" <br> Ваш Надежный Партнер
                      </h1>
 
                      <p class="home__description">
-                        Строительные материалы по низким ценам
+                        Строительные материалы оптом по низким ценам
                      </p>
 
                      <div class="home__value">
@@ -122,6 +110,8 @@
                            </span>
                         </div>
                      </div>
+
+                     <a href="#popular" class="button">Перейти в каталог</a>
                   </div>
 
                   <div class="home__images">
@@ -142,9 +132,9 @@
             <!--==================== POPULAR ====================-->
             <section class="section" id="popular">
                 <div class="container">
-                  <h2 class="section__title">Популярные товары</h2>
-                  <h3 class="popular__title"> Мы поставляем строительные материалы в Крым и другие регионы. Делаем ставку на качество и работаем в партнерстве с надежными производителям с крепкой репутацией. Верим, что строительство – это не только труд и отрасль, но и тренд, наука и искусство</h3>
-                 
+                  
+                  <h3 class="popular__title"> В условиях дефицита строительных материалов на рынке АО «ВБЛК» находит новые каналы поставок, чтобы обеспечить клиентов необходимым товарами. Наши стандарты – отличный сервис, передовые решения и забота об экологии. Мы придерживаемся их с момента основания компании, стараемся не изменять своим ценностям, поэтому нас выбирают</h3>
+                  <h2 class="section__subtitle">Наши товары</h2>
                   <div class="popular__container swiper">
                      
                      <div class="swiper-wrapper">
@@ -409,14 +399,10 @@
                                  Предотвращает появление трещин, увеличивает срок безремонтной эксплуатации. Применяется в системе теплоизоляции наружных стен зданий с тонким штукатурным слоем ТН-Фасад Профи. Предназначена для армирования базового штукатурного слоя в системах фасадных тонкослойных композиционных в рядовой зоне, в зоне оконных проемов и зонах усиления углов при ремонте, строительстве зданий и сооружений различного назначения. 
                               </p>
                            </div>
-                        </article>
-
-                        
+                        </article>    
                      </div>
-                     <button id="openModal">Узнать цены</button>
+                     <a href="#contact" id="openModal">Узнать цены</a>
 
-                     
-                     <!-- </div> -->
                      <div class="swiper-button-next">
                         <i class='bx bx-chevron-right'></i>
                      </div>
@@ -426,48 +412,6 @@
                   </div>
                 </div>
 
-                <div id="modal" class="modal">
-                  <div class="form__container">
-                     <div class="text">
-                        Оставьте заявку
-                     </div>
-                     <form action="#">
-                        <div class="form-row">
-                           <div class="input-data">
-                              <input type="text" required>
-                              <div class="underline"></div>
-                              <label for="">Ваше Имя</label>
-                           </div>
-                        </div>
-                        <div class="form-row">
-                           <div class="input-data">
-                              <input type="text" required>
-                              <div class="underline"></div>
-                              <label for="">Телефон</label>
-                           </div>
-                        </div>
-                        <div class="form-row">
-                        <div class="input-data textarea">
-                           <textarea rows="8" cols="80" required></textarea>
-                           <br />
-                           <div class="underline"></div>
-                           <label for="">Ваше сообщение</label>
-                           <br />
-                           <div class="form-row submit-btn">
-                              <div class="input-data">
-                                 <div class="inner"></div>
-                                 <input type="submit" value="Отправить">
-                              </div>
-                           </div>
-                        <div class="form-tel">
-                           <p class="form-tel__text">Позвонить</p>
-                           <a href="tel:+79663528900" class="form-tel__number">+7 (966) 352-89-00</a>
-                        </div>
-                     </form>
-                  </div>
-
-                  
-               </div>
             </section>
 
             <!--==================== VALUE ====================-->
@@ -484,7 +428,7 @@
                   
                   <div class="value__content">
                      <div class="value__data">
-                        <span class="section__subtitle">Наш ассортимент</span>
+                        <span class="section__subtitle">Ассортимент</span>
                         <p class="value__description">
                            Если вы ищете надежного партнера для поставок стройматериалов, "ВБЛК" – это ваш выбор. Мы готовы сделать ваше строительство более эффективным, надежным и инновационным.
                         </p>
@@ -581,67 +525,76 @@
             </section>
             <!--==================== Project ====================-->
             <section class="project section" id="project">
-               
-               <div class="galery__container container">
-                  <h2 class="section__title">Наши проекты</h2>
-                  <div class="galery__wrapper">
-                     <div class="gallery__card">
-                        <h3 class="gallery__title">Жилой комплекс <br> «Пятый Элемент» в г.Симферополь</h3>
-                        <div class="gallery">   
-                           <img src="assets/img/project/five/five1.jpg" alt="Жилой комплекс «Пятый Элемент» в г.Симферополь">
-                           <img src="assets/img/project/five/five2.jpg" alt="Жилой комплекс «Пятый Элемент» в г.Симферополь">
-                           <img src="assets/img/project/five/five3.jpg" alt="Жилой комплекс «Пятый Элемент» в г.Симферополь">
-                           <img src="assets/img/project/five/five4.jpg" alt="Жилой комплекс «Пятый Элемент» в г.Симферополь">
-                        </div>
-                     </div>
-                     <div class="gallery__card">
-                        <h3 class="gallery__title">Коттеджный поселок <br> «Ритмы природы» в Московской области</h3>
-                        <div class="gallery">   
-                           <img src="assets/img/project/nature/nature1.jpg" alt="Коттеджный поселок «Ритмы природы» в Московской области">
-                           <img src="assets/img/project/nature/nature2.jpg" alt="Коттеджный поселок «Ритмы природы» в Московской области">
-                           <img src="assets/img/project/nature/nature3.jpg" alt="Коттеджный поселок «Ритмы природы» в Московской области">
-                           <img src="assets/img/project/nature/nature4.jpg" alt="Коттеджный поселок «Ритмы природы» в Московской области">
-                        </div>
-                     </div>
-                     <div class="gallery__card">
-                        <h3 class="gallery__title">Ремонт <br> Курской АЭС</h3>
-                        <div class="gallery">   
-                           <img src="assets/img/project/repair/repair1.jpg" alt="Ремонт Курской АЭС">
-                           <img src="assets/img/project/repair/repair2.jpg" alt="Ремонт Курской АЭС">
-                           <img src="assets/img/project/repair/repair3.jpg" alt="Ремонт Курской АЭС">
-                           <img src="assets/img/project/repair/repair6.jpg" alt="Ремонт Курской АЭС">
-                        </div>
-                     </div>
-                     <div class="gallery__card">
+               <div class="container">
+                  <span class="section__subtitle">Проекты</span>
+                  <h2 class="contact__description">
+                     Мы активно участвовали в проектах, предоставляя наш материал и техническое решения.
+                  </h2>
+                  <div class="gallery-wrapper">
+                     <div class="gallery__item">
                         <h3 class="gallery__title">Жилой комплекс <br> «Грэсовский» в г.Симферополь</h3>
-                        <div class="gallery">   
-                           <img src="assets/img/project/grs/grs1.jpg" alt="Жилой комплекс «Грэсовский» в г.Симферополь">
-                           <img src="assets/img/project/grs/grs2.jpg" alt="Жилой комплекс «Грэсовский» в г.Симферополь">
-                           <img src="assets/img/project/grs/grs3.jpg" alt="Жилой комплекс «Грэсовский» в г.Симферополь">
-                           <img src="assets/img/project/grs/grs4.jpg" alt="Жилой комплекс «Грэсовский» в г.Симферополь">
+                        <div class="gallery">                  
+                           <img src="assets/img/project/grs/grs2.jpg" alt="«Грэсовский»">
+                           <img src="assets/img/project/grs/grs3.jpg" alt="«Грэсовский»">
+                           <img src="assets/img/project/grs/grs4.jpg" alt="«Грэсовский»">
+                           <img src="assets/img/project/grs/grs1.jpg" alt="«Грэсовский»">
                         </div>
                      </div>
-                     <div class="gallery__card">
-                        <h3 class="gallery__title">Отель <br> «Магия» в городе Саки</h3>
-                        <div class="gallery">   
-                           <img src="assets/img/project/magic/magic1.jpg" alt="Отель «Магия» в городе Саки">
-                           <img src="assets/img/project/magic/magic2.jpg" alt="Отель «Магия» в городе Саки">
-                           <img src="assets/img/project/magic/magic3.jpg" alt="Отель «Магия» в городе Саки">
-                           <img src="assets/img/project/magic/magic4.jpg" alt="Отель «Магия» в городе Саки">
+                     
+
+                     <div class="gallery__item">
+                        <h3 class="gallery__title">Жилой комплекс <br> «Пятый Элемент» в г.Симферополь</h3>
+                        <div class="gallery">                  
+                           <img src="assets/img/project/five/five1.jpg" alt="«Пятый Элемент»">
+                           <img src="assets/img/project/five/five2.jpg" alt="«Пятый Элемент»">
+                           <img src="assets/img/project/five/five3.jpg" alt="«Пятый Элемент»">
+                           <img src="assets/img/project/five/five4.jpg" alt="«Пятый Элемент»">
                         </div>
                      </div>
-                     <div class="gallery__card">
+         
+                     <div class="gallery__item">
+                        <h3 class="gallery__title">Ремонт <br> Курской АЭС</h3>
+                        <div class="gallery">                  
+                           <img src="assets/img/project/repair/repair6.jpg" alt="АЭС">
+                           <img src="assets/img/project/repair/repair2.jpg" alt="АЭС">
+                           <img src="assets/img/project/repair/repair1.jpg" alt="АЭС">
+                           <img src="assets/img/project/repair/repair4.jpg" alt="АЭС">
+                        </div>
+                     </div>
+
+                     <div class="gallery__item">
                         <h3 class="gallery__title">Онкологический центр <br> на ул. Дурова в Москве</h3>
-                        <div class="gallery">   
-                           <img src="assets/img/project/clinic/clinic1.jpg" alt="Онкологический центр на ул. Дурова в Москве">
-                           <img src="assets/img/project/clinic/clinic2.jpg" alt="Онкологический центр на ул. Дурова в Москве">
-                           <img src="assets/img/project/clinic/clinic3.jpg" alt="Онкологический центр на ул. Дурова в Москве">
-                           <img src="assets/img/project/clinic/clinic4.jpg" alt="Онкологический центр на ул. Дурова в Москве">
+                        <div class="gallery">                  
+                           <img src="assets/img/project/clinic/clinic2.jpg" alt="Онкологический центр">
+                           <img src="assets/img/project/clinic/clinic3.jpg" alt="Онкологический центр">
+                           <img src="assets/img/project/clinic/clinic4.jpg" alt="Онкологический центр">
+                           <img src="assets/img/project/clinic/clinic1.jpg" alt="Онкологический центр">
+                        </div>
+                     </div>
+
+                     <div class="gallery__item">
+                        <h3 class="gallery__title">Коттеджный поселок <br> «Ритмы природы» в Московской области</h3>
+                        <div class="gallery">                  
+                           <img src="assets/img/project/nature/nature5.jpg" alt="«Ритмы природы»">
+                           <img src="assets/img/project/nature/nature3.jpg" alt="«Ритмы природы»">
+                           <img src="assets/img/project/nature/nature1.jpg" alt="«Ритмы природы»">
+                           <img src="assets/img/project/nature/nature4.jpg" alt="«Ритмы природы»">
+                        </div>
+                     </div>
+
+
+                     <div class="gallery__item">
+                        <h3 class="gallery__title">Отель <br> «Магия» в г. Саки</h3>
+                        <div class="gallery">                  
+                           <img src="assets/img/project/magic/magic1.jpg" alt="АЭС">
+                           <img src="assets/img/project/magic/magic2.jpg" alt="АЭС">
+                           <img src="assets/img/project/magic/magic4.jpg" alt="АЭС">
+                           <img src="assets/img/project/magic/magic3.jpg" alt="АЭС">
                         </div>
                      </div>
                   </div>
                </div>
-           </section>
+             </section>
             <!--==================== CONTACT ====================-->
             <section class="contact section" id="contact">
                 <div class="contact__container container grid">
@@ -657,13 +610,10 @@
                   <div class="contact__content">
                      <div class="contact__data">
                         <span class="section__subtitle">Контакты</span>
-                       <!--  <h2 class="section__title">
-                           Свяжитесь с нами
-                        </h2> -->
                         <p class="contact__description">
                            Мы всегда готовы ответить на ваши вопросы
                         </p>
-                        <h2 class="popular__title">
+                        <h2 class="contact__description">
                            Мы приглашаем к сотрудничеству и гарантируем, что постараемся помочь вам реализовать самые сложные проекты.
                         </h2>
                      </div>
@@ -727,7 +677,8 @@
                                     г. Симферополь
                                  </h3>
                                  <p class="contact__card-description">
-                                    Мирное, улица деловая 5, Бизнес Центр 5 элемент.
+                                    Мирное, ул. Деловая, д. 5,
+                                    Бизнес Центр «5 элемент»..
                                  </p>
                               </div>
                            </div>
@@ -742,19 +693,17 @@
             <div class="footer__container container grid">
                <div>
                   <a href="#" class="footer__logo">
-                     ВБЛК
+                     АО «ВБЛК»
                   </a>
 
                   <p class="footer__description">
-                     Мы поставляем строительные материалы в Крым и другие регионы. Делаем ставку на качество и работаем в партнерстве с надежными производителям с крепкой репутацией. Верим, что строительство – это не только труд и отрасль, но и тренд, наука и искусство.
-
-                     Мы приглашаем к сотрудничеству и гарантируем, что постараемся помочь вам реализовать самые сложные проекты                     
+                     Мы поставляем строительные материалы в Крым и другие регионы. Делаем ставку на качество и работаем в партнерстве с надежными производителям с крепкой репутацией. Верим, что строительство – это не только труд и отрасль, но и тренд, наука и искусство               
                   </p>
                </div>
 
                <div class="footer__content">
                   <div>
-                     <h3 class="footer__title">Контакты</h3>
+                     <h3 class="footer__title">Связаться с нами</h3>
                      <ul class="footer__links">
                         <li>
                            <a href="tel:+79663528900" class="footer__link">+7(966)352-89-00</a>
@@ -763,7 +712,8 @@
                            <a href="mailto:reception@vblk.ru" class="footer__link">reception@vblk.ru</a>
                         </li>
                         <li>
-                           <p class="footer__link"> г. Симферополь Мирное, улица деловая 5,<br> Бизнес Центр 5 элемент.</p>
+                           <p class="footer__link">г. Симферополь, Мирное, <br> ул. Деловая, д. 5,
+                              Бизнес Центр «5 элемент».</p>
                         </li>
                      </ul>
                   </div>
@@ -771,6 +721,9 @@
                   <div>
                      <h3 class="footer__title">Реквизиты компании</h3>
                      <ul class="footer__links">
+                        <li>
+                           <p class="footer__link">АО «ВБЛК»</p>
+                        </li>
                         <li>
                            <p class="footer__link">121099, Вн.Тер.г. Муниципальный округ Арбат, <br> Пер 1-Й Смоленский, д. 21</p>
                         </li>
@@ -782,26 +735,8 @@
                         </li>
                      </ul>
                   </div>
-
-
-
-                  <div>
-                     <h3 class="footer__title">Остались вопросы?</h3>
-                     <p class="footer__link">Мы позвоним и ответим</p>
-                     <form class="contact-form">
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name" class="input-field" placeholder="Ваше имя" required>
-                      
-                        <label for="phone"></label>
-                        <input type="tel" id="phone" name="phone" class="input-field" placeholder="Номер телефона" required>
-                      
-                        <button type="submit" class="submit-button">Жду звонка</button>
-                      </form>
-                  </div>
-               </div>
-            </div>
-
-            
+             </div>
+            </div>        
         </footer>
        </div>
 
@@ -809,10 +744,9 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class='bx bx-chevron-up'></i>
         </a>
-
         <!--=============== SCROLLREVEAL ===============-->
         <script src="js/raw.githubusercontent.com_jlmakes_scrollreveal_master_dist_scrollreveal.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
         <!--=============== SWIPER JS ===============-->
         <script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
