@@ -103,7 +103,7 @@ const sr = ScrollReveal({
 })
 
 sr.reveal('.home__title, .popular__container, .footer__container, .gallery__item, .button')
-sr.reveal('.home__description', {
+sr.reveal('.home__description, .project', {
    delay: 500
 })
 sr.reveal('.home__value', {
@@ -120,7 +120,7 @@ sr.reveal('.value__content, .contact__images', {
    origin: 'right'
 });
 
-// Функция для установки значения куки
+
 function setCookie(cookieName, cookieValue, expirationDays) {
    const date = new Date();
    date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
@@ -128,7 +128,7 @@ function setCookie(cookieName, cookieValue, expirationDays) {
    document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
 }
 
-// Функция для получения значения куки
+
 function getCookie(cookieName) {
    const name = cookieName + "=";
    const decodedCookie = decodeURIComponent(document.cookie);
@@ -145,7 +145,6 @@ function getCookie(cookieName) {
    return "";
 }
 
-// Функция для проверки, было ли дано согласие на использование куки
 function checkCookie() {
    const cookieConsent = getCookie("cookieConsent");
    if (cookieConsent === "") {
@@ -160,16 +159,13 @@ function checkCookie() {
    }
 }
 
-// Функция для принятия согласия на использование куки
 function acceptCookies() {
    setCookie("cookieConsent", "true", 365);
    const banner = document.getElementById("cookieBanner");
    banner.style.display = "none";
 }
 
-// Вызов функции проверки куки
 checkCookie();
-
 
 const readMoreLinks = document.querySelectorAll('.popular__read-more');
 

@@ -223,10 +223,19 @@ body.dark-theme {
   transition: 0.3s;
 }
 
+.logo {
+  padding-top: 10px;
+}
+
 .logo img {
   width: 40px;
   max-height: 50px;
   background-color: transparent;
+}
+
+.logo__band{
+  display: flex;
+  flex-direction: column;
 }
 
 .nav__logo:hover {
@@ -413,7 +422,6 @@ body.dark-theme {
   display: inline-flex;
   height: 300px;
   overflow: hidden;
-  border-radius: 125px 125px 12px 12px;
   bottom: -1.5rem;
   box-shadow: 0 15px 32px hsla(228, 66%, 25%, 0.25);
 }
@@ -516,13 +524,18 @@ body.dark-theme {
   position: absolute;
   bottom: 0;
   right: 1rem;
-  padding: 0.8rem 0 0 13rem;
+  padding: 0.7rem 0 0 13rem;
   background-color: var(--container-color);
   color: var(--first-color);
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
   opacity: 1;
+  z-index: 1234;
+}
+
+.popular__card.expanded .popular__read-more {
+  padding: 0 0 0 0.5rem;
 }
 
 .popular__img {
@@ -608,7 +621,6 @@ body.dark-theme {
   width: 250px;
   height: 300px;
   overflow: hidden;
-  border-radius: 125px 125px 12px 12px;
   inset: 0;
   margin: auto;
   box-shadow: 0 15px 32px hsla(228, 66%, 25%, 0.25);
@@ -715,7 +727,6 @@ body.dark-theme {
   width: 250px;
   height: 300px;
   overflow: hidden;
-  border-radius: 125px 125px 12px 12px;
   inset: 0;
   margin: auto;
   box-shadow: 0 15px 32px hsla(228, 66%, 25%, 0.25);
@@ -1107,11 +1118,11 @@ body.dark-theme {
 
 @media screen and (max-width: 550px) {
   .home__title {
-    font-size: var(--h3-font-size);
+    font-size: var(--h1-font-size);
   }
 
   .home__description {
-    font-size: var(--small-font-size);
+    font-size: var(--h2-font-size);
   }
 
   .value__img img,
@@ -1126,9 +1137,12 @@ body.dark-theme {
     font-size: var(--smaller-font-size);
   }
 
-  .nav__logo,
-  .nav__logo i {
+  .nav__logo {
     font-size: var(--normal-font-size);
+  }
+
+  .logo__band {
+    padding-top: 10px;
   }
 
   .nav__menu {
@@ -1280,7 +1294,6 @@ body.dark-theme {
   .home__img {
     width: 472px;
     height: 634px;
-    border-radius: 236px 236px 12px 12px;
     bottom: -2rem;
   }
 
@@ -1318,7 +1331,6 @@ body.dark-theme {
   .contact__img {
     width: 461px;
     height: 601px;
-    border-radius: 238px 238px 12px 12px;
   }
 
   .value__img img,
