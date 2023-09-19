@@ -234,3 +234,32 @@ cards.forEach(card => {
       }
    });
 });
+
+const searchInput = document.getElementById('searchInput');
+const productCards = document.getElementsByClassName('popular__card');
+const searchResult = document.getElementById('searchResult');
+const nextButton = document.querySelector('.swiper-button-next');
+searchInput.addEventListener('input', function() {
+   const query = searchInput.value.toLowerCase();
+   let count = 0;
+   
+   Array.from(productCards).forEach(function(card) {
+     const title = card.querySelector('.popular__title').textContent.toLowerCase();
+     
+     if (title.includes(query)) {
+       card.style.display = 'block';
+       count++;
+     } else {
+       card.style.display = 'none';
+     }
+   });
+   if (query === '') {
+      searchResult.style.display = 'none';
+    } else {
+      searchResult.style.display = 'block';
+      searchResult.textContent = `Найдено товаров: ${count}`;
+    }
+   
+   searchResult.textContent = `Найдено товаров: ${count}`;
+   nextButton.click();
+ });

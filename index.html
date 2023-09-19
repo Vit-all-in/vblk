@@ -79,9 +79,9 @@
             <section class="home section" id="home">
                 <div class="home__container container grid">
                   <div class="home__data">
-                     <h1 class="home__title">
+                    <!--  <h1 class="home__title">
                         АО "ВБЛК" <br> Ваш Надежный Партнер
-                     </h1>
+                     </h1> -->
 
                      <p class="home__description">
                         Строительные материалы оптом по низким ценам
@@ -138,8 +138,21 @@
             <section class="section" id="popular">
                 <div class="container">
                   
-                  <h3 class="popular__title"> В условиях дефицита строительных материалов на рынке АО «ВБЛК» находит новые каналы поставок, чтобы обеспечить клиентов необходимым товарами. Наши стандарты – отличный сервис, передовые решения и забота об экологии. Мы придерживаемся их с момента основания компании, стараемся не изменять своим ценностям, поэтому нас выбирают</h3>
-                  <h2 class="section__subtitle">Наши товары</h2>
+                  <h3 class="contact__description"> В условиях дефицита строительных материалов на рынке АО «ВБЛК» находит новые каналы поставок, чтобы обеспечить клиентов необходимым товарами. Наши стандарты – отличный сервис, передовые решения и забота об экологии. Мы придерживаемся их с момента основания компании, стараемся не изменять своим ценностям, поэтому нас выбирают</h3>
+                  
+                  <div class="popular__header">
+                     <h2 class="section__subtitle">Наши товары</h2>
+                     <div class="popular__search">
+                       <!--  <h3 class="search__title">Поиск по товарам</h3> -->
+                        <div class="search-container">   
+                           <button class="btn-search"><i class='bx bx-search-alt-2'></i></button>
+                           <input type="text" id="searchInput" placeholder="Поиск по товарам">  
+                         </div>
+                         <div id="searchResult"></div>
+                     </div>
+                     
+                  </div>
+                  
                   <div class="popular__container swiper">
                      
                      <div class="swiper-wrapper">
@@ -434,9 +447,9 @@
                   <div class="value__content">
                      <div class="value__data">
                         <span class="section__subtitle">Ассортимент</span>
-                        <p class="value__description">
+                        <!-- <p class="value__description">
                            Если вы ищете надежного партнера для поставок стройматериалов, "ВБЛК" – это ваш выбор. Мы готовы сделать ваше строительство более эффективным, надежным и инновационным.
-                        </p>
+                        </p> -->
                      </div>
 
                      <div class="value__accordion">
@@ -533,16 +546,16 @@
                <div class="container">
                   <span class="section__subtitle">Проекты</span>
                   <h2 class="contact__description">
-                     Мы активно участвовали в проектах, предоставляя наш материал и техническое решения.
+                     Проекты, созданные с нашим участием
                   </h2>
                   <ul class="project__box">
                      <li class="project__card" data-modal-id="modal-1">
                         <img src="assets/img/project/grs/grs1.jpg" alt="grs1">
-                        <h3 class="project__title">Жилой комплекс <br> «Грэсовский» в г.Симферополь</h3>
+                        <h3 class="project__title">Жилой комплекс <br> «Грэсовский» в Симферополе</h3>
                      </li>
                      <li class="project__card" data-modal-id="modal-2">
                         <img src="assets/img/project/five/five3.jpg" alt="five">
-                        <h3 class="project__title">Жилой комплекс <br> «Пятый Элемент» в г.Симферополь</h3>
+                        <h3 class="project__title">Жилой комплекс <br> «Пятый Элемент» в Симферополе</h3>
                      </li>
                      <li class="project__card" data-modal-id="modal-3">
                         <img src="assets/img/project/repair/repair1.jpg" alt="grs1">
@@ -558,7 +571,7 @@
                      </li>
                      <li class="project__card" data-modal-id="modal-6">
                         <img src="assets/img/project/magic/magic1.jpg" alt="magic">
-                        <h3 class="project__title">Отель <br> «Магия» в г. Саки</h3>
+                        <h3 class="project__title">Отель <br> «Магия» в Саки</h3>
                      </li>
                   </ul>
                   
@@ -568,7 +581,7 @@
              <div class="modal" id="modal-1"> 
                <span class="modal__close">&times;</span> 
                <div class="modal__content">
-                  <h3 class="project__title">Жилой комплекс <br> «Грэсовский» в г.Симферополь</h3>
+                  <h3 class="project__title">Жилой комплекс <br> «Грэсовский» в Симферополе</h3>
                   <div class="modal__box">
                      <img src="assets/img/project/grs/grs1.jpg" alt="Image 1"> 
                      <img src="assets/img/project/grs/grs2.jpg" alt="Image 2"> 
@@ -581,7 +594,7 @@
             <div class="modal" id="modal-2"> 
                <span class="modal__close">&times;</span> 
                <div class="modal__content">
-                  <h3 class="project__title">Жилой комплекс <br> «Пятый Элемент» в г.Симферополь</h3>
+                  <h3 class="project__title">Жилой комплекс <br> «Пятый Элемент» в Симферополе</h3>
                   <div class="modal__box">
                      <img src="assets/img/project/five/five1.jpg" alt="">
                      <img src="assets/img/project/five/five2.jpg" alt="">
@@ -634,7 +647,7 @@
             <div class="modal" id="modal-6"> 
                <span class="modal__close">&times;</span> 
                <div class="modal__content">
-                  <h3 class="project__title">Отель <br> «Магия» в г. Саки</h3>
+                  <h3 class="project__title">Отель <br> «Магия» в Саки</h3>
                   <div class="modal__box">
                      <img src="assets/img/project/magic/magic1.jpg" alt="magic">
                      <img src="assets/img/project/magic/magic2.jpg" alt="magic">
@@ -768,7 +781,7 @@
                   </div>
 
                   <div>
-                     <h3 class="footer__title">Реквизиты компании</h3>
+                     <h3 class="footer__title">Реквизиты компании.</h3>
                      <ul class="footer__links">
                         <li>
                            <p class="footer__link">АО «ВБЛК»</p>
