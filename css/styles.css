@@ -119,10 +119,6 @@ body.dark-theme {
   --body-color: hsl(228, 12%, 8%);
   --container-color: hsl(228, 16%, 12%);
 }
-/*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
-==========*/
 
 .dark-theme .nav__menu,
 .dark-theme .home__img,
@@ -187,7 +183,7 @@ body.dark-theme {
 }
 
 .main {
-  overflow: hidden; /* For the animations ScrollReveal*/
+  overflow: hidden; 
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -1442,4 +1438,8 @@ body.dark-theme {
   body {
     zoom: 2;
   }
+}
+
+.test {
+  width: 200px;
 }
